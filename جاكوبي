@@ -1,0 +1,18 @@
+A=input('Enter coefficient matrix A:');
+B=input('Enter source vector B:');
+P=input('Enter intial Gues vector');
+n=input('Enter No.of iteration');
+e=input('Enter youre tollerance');
+N=length(B);
+x=zeros(N,1);
+for j=1:n
+    for i=1:N
+        x(i)=(B(i)/A(i,i))-(A(i,[1:i-1,i+1:N])*P([1:i-1,i+1:N]))/A(i,i);
+    end
+    fprintf('iteration No %dn',i)
+    x
+    if abs(x-P)<e
+        break
+    end
+    P=x;
+end
