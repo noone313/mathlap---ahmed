@@ -1,0 +1,10 @@
+Enter coefficient matrix A:
+[10 3 1;3 10 2;1 2 10]
+Enter source vector B:
+[19;29;35]
+Enter intial Gues vector
+[0;0;0]
+Enter No.of iteration
+20
+Enter youre tollerance
+0.0001
